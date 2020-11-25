@@ -33,6 +33,7 @@ import Financing from './components/Financing';
 const BPlusTree = require('bplustree');
 
 //default order: 6
+// "start": "react-scripts start",
 const tree = new BPlusTree()
 
 class App extends Component {
