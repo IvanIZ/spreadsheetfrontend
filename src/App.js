@@ -105,7 +105,7 @@ class App extends Component {
            <HashRouter>
                 <div>
                   {/* <Navbar /> */}
-                  <Switch>
+                  <Switch basename={`${process.env.PUBLIC_URL}/`}>
                     <Route path="/" component={Simulations} exact/>
                     <Route path="/result" component={Result}/>
                     <Route path="/start" component={Start}/>
