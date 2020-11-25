@@ -22,7 +22,7 @@ import ReactDataSheet from 'react-datasheet';
 // Be sure to include styles at some point, probably during your bootstrapping
 import 'react-datasheet/lib/react-datasheet.css';
 
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch, HashRouter } from 'react-router-dom';
 import Start from './components/Start';
 import Result from './components/Result';
 import Simulations from './components/Simulations';
@@ -102,7 +102,7 @@ class App extends Component {
     return (
       <div className="App">
 
-           <BrowserRouter>
+           <HashRouter>
                 <div>
                   {/* <Navbar /> */}
                   <Switch>
@@ -114,7 +114,7 @@ class App extends Component {
                     <Route path="/financing" component={Financing}/>
                   </Switch>
                 </div> 
-            </BrowserRouter>
+            </HashRouter>
       </div>
     );
   }
