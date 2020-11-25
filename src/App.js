@@ -102,7 +102,7 @@ class App extends Component {
     return (
       <div className="App">
 
-           <HashRouter basename={`${process.env.PUBLIC_URL}`}>
+           <BrowserRouter basename={process.env.PUBLIC_URL}>
                 <div>
                   {/* <Navbar /> */}
                   <Switch>
@@ -114,7 +114,7 @@ class App extends Component {
                     <Route path="/financing" component={Financing}/>
                   </Switch>
                 </div> 
-            </HashRouter>
+            </BrowserRouter>
       </div>
     );
   }
