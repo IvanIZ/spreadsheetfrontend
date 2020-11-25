@@ -102,10 +102,10 @@ class App extends Component {
     return (
       <div className="App">
 
-           <HashRouter>
+           <HashRouter basename={`${process.env.PUBLIC_URL}/`}>
                 <div>
                   {/* <Navbar /> */}
-                  <Switch basename={`${process.env.PUBLIC_URL}/`}>
+                  <Switch>
                     <Route path="/" component={Simulations} exact/>
                     <Route path="/result" component={Result}/>
                     <Route path="/start" component={Start}/>
