@@ -34,6 +34,7 @@ const BPlusTree = require('bplustree');
 
 //default order: 6
 // "start": "react-scripts start",
+// "proxy": "http://localhost:3001",
 const tree = new BPlusTree()
 
 class App extends Component {
