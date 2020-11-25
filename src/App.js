@@ -96,6 +96,7 @@ class App extends Component {
     });               
   
   }
+  // <Route path="/" component={Simulations} exact/>
 
   render() { 
 
@@ -106,7 +107,7 @@ class App extends Component {
                 <div>
                   {/* <Navbar /> */}
                   <Switch>
-                    <Route path="/" component={Simulations} exact/>
+                    <Route path="/spreadsheetfrontend" component={Simulations} exact/>
                     <Route path="/result" component={Result}/>
                     <Route path="/start" component={Start}/>
                     <Route path="/academic" component={Academic}/>
